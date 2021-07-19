@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap'); /*for register */
+html {
+  min-height: 100%;
+  position: relative;
+
+}
+/* image for content front page */
+.amaze-img{
+  max-width: 55%;
+    height: auto;
+  float: right;
+}
+
+/* text styles */
+.conpara{
+  font-family: 'Port Lligat Sans', sans-serif;
+}
+.secondheading{
+  font-family: 'Amatic SC', cursive;
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  color: #9B3675;
+}
+.main-head{
+  font-family: 'Bree Serif', serif;
+  color: #FF3796
+}
+.peoplename{
+  font-family: 'Port Lligat Sans', sans-serif;
+}
+
+#top{ border: 4px solid #5F939A;
+ }
+hr{
+   border: 2px solid #CDF0EA;
+   border-radius: 60px;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+/* CSS for navigation bar */
+.navbar {
+  background-color: #CDF0EA;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+
+/* CSS for footer */
+.footer-padding{
+  padding-bottom: 60px;
+
+}
+
+
+.footer {
+
+	position: absolute;
+
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #1abc9c;
+}
+
+.footer p {
+ text-align: center;
+	margin-top: 25px;
+	font-size: 12px;
+  color: #fff;
+}
+/* feebacks form */
+.form{
+  margin-top: 50px;
+  padding-top:100px;
+  padding-bottom: 5px;
+}
+
+/* sign up page */
+
+
+.form-signin {
+  width: 50%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-floating:focus-within {
+  z-index: 2;
+
+}
+
+.top{
+border-bottom-right-radius: 0;
+border-bottom-left-radius: 0;
+}
+.middle{
+  border-radius:0;
+
+
+}
+.bottom{
+  margin-bottom: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+a{
+  cursor: pointer;
+}
+.content{
+  padding-bottom: 20px;
+}
+.foot{
+  padding-bottom: 50px;
+}
+.list{
+  justify-content: flex-end;
+}
+h1{
+  font-family: 'Bree Serif', serif;
+}
+.new-line{
+  text-indent: 130px;
+}

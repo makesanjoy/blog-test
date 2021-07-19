@@ -1,0 +1,44 @@
+<%- include("partials/header"); -%>
+<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<h2 class="secondheading" style="padding-top:8px;"
+>Feedbacks or suggestions</h2>
+  <p class="conpara" style="padding-bottom:40px;">Hi Whats up! If you feel bad or something must be changed then please feel
+  free to write up in the this feedback form so that we can make changes as per
+   your prefernces or else on any other topic you like us to post on our site
+    then also write up in this section.<br> A BIG thank you!!!</p>
+    <div  class="">
+<%  posts.reverse().forEach(function(post){ %>
+
+<h4 class="peoplename" ><strong><%=post.title%></strong></h4>
+
+<p class="conpara">
+  <%=post.content%>
+</p>
+
+
+<hr>
+
+
+
+<% posts.splice(10,10)  %>
+<% }) %>
+</div>
+<div  class="form conpara">
+  <h3 style="text-decoration:underline;">Write you feedback here</h3>
+  <form action="/feedback" method="post">
+    <div class="form-group">
+      <label>Your Name :</label>
+      <input class="form-control" type="text" name="postTitle" maxlength="25" required>
+      <label>Feedbacks or suggestions :</label>
+      <textarea class="form-control" name="postBody" rows="5" cols="30" maxlength="150" required></textarea>
+    </div>
+    <button class="btn btn-primary" type="submit" name="button">Post</button>
+  </form>
+</div>
+<script type="text/javascript" src="./script.js">
+
+</script>
+
+<%- include("partials/footer"); -%>
